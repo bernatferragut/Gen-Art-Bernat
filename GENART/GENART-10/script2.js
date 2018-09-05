@@ -15,23 +15,19 @@ window.addEventListener('resize', function(){
 let dots = [];
 // DOT
 class Dot {
-
   constructor(x,y){
     this.x = x;
     this.y = y;
   }
-
   on(){
     noStroke();
     fill(color(255,255,255));
     ellipse(this.x, this.y,2,2);
   }
-
-  move(){
-    this.x += random(3);
-    this.y += random(3);
+  shake(){
+    this.x += random(-3,3);
+    this.y += random(-3,3);
   }
-
   off(){
     noStroke();
     fill(color(0,0,0));
@@ -53,7 +49,12 @@ function setup() {
 }
 
 function draw() {
+  // console.log(frameCount);
   dots.map(function(dot){
     dot.on();
-  });  
+    // dot.shake();
+    // dot.off();
+  });
+  
 }
+
