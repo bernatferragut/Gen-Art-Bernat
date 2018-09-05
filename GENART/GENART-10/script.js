@@ -12,6 +12,12 @@ let props = {
   }
 }
 
+// canvas resizing
+window.addEventListener('resize', function(){
+  props.canvas.w = window.innerWidth
+  props.canvas.h = window.innerHeight
+}) 
+
 function setup() {
   // CANVAS
   createCanvas(props.canvas.w, props.canvas.h);
@@ -29,3 +35,5 @@ function setup() {
 function draw() {
   // CODE  
 }
+
+
