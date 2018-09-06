@@ -1,18 +1,15 @@
 // JS with P5JS
 
-// CANVAS
-let canvas = {
-  w       : window.innerWidth,
-  h       : window.innerHeight,
-  spacing : 5
-}
+  let w       = window.innerWidth
+  let h       = window.innerHeight
+  let spacing = 20
+  let dots = []
 
 window.addEventListener('resize', function(){
-  canvas.w = window.innerWidth
-  canvas.h = window.innerHeight
+  w = window.innerWidth
+  h = window.innerHeight
 })
 
-let dots = [];
 // DOT
 class Dot {
   constructor(x,y){
@@ -21,40 +18,39 @@ class Dot {
   }
   on(){
     noStroke();
-    fill(color(255,255,255));
-    ellipse(this.x, this.y,2,2);
+    fill(color('white'))
+    ellipse(this.x, this.y,2,2)
   }
   shake(){
-    this.x += random(-3,3);
-    this.y += random(-3,3);
+    this.x += random(-3,3)
+    this.y += random(-3,3)
   }
   off(){
-    noStroke();
-    fill(color(0,0,0));
-    ellipse(this.x, this.y,2,2);
+    noStroke()
+    fill(color('black'))
+    ellipse(this.x, this.y,2,2)
   }
 }
 
+// 1. SETUP MAIN FUNCTION
 function setup() {
+  frameRate(60) // 1 FPS
   // CANVAS
-  createCanvas(canvas.w, canvas.h);
-  background('black');
+  createCanvas(w, h)
+  background('black')
   // POPULATE
-  for(let x = 0; x < canvas.w; x += canvas.spacing) {
-    for(let y = 0; y < canvas.h; y += canvas.spacing ) {
-      dots.push(new Dot(x,y));
+  for(let x = spacing/2; x < w; x += spacing) {
+    for(let y = spacing/2; y < h; y += spacing ) {
+      dots.push(new Dot(x,y))
     }
   }
   console.log(dots);
 }
-
+// 2. DRAW MAIN FUNCTION
 function draw() {
-  // console.log(frameCount);
-  dots.map(function(dot){
-    dot.on();
-    // dot.shake();
-    // dot.off();
-  });
-  
+  dots.map((dot)=>{
+    dot.on()
+    dot.shake()
+    dot.off()
+  })
 }
-
