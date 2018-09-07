@@ -1,5 +1,4 @@
 // JS with P5JS
-
   let w       = window.innerWidth
   let h       = window.innerHeight
   let spacing = 20
