@@ -1,11 +1,12 @@
 // variables
-let w = window.innerWidth;
+let w = window.innerWidth
 let h = window.innerHeight;
 let size = 2;
-let spacing = 10;
+let spacing = 100;
 let dots = [];
 
 function setup() {
+  frameRate(10);
   createCanvas(w, h);
   background('black');
   // dot matrix generation
@@ -19,9 +20,11 @@ function setup() {
 console.log(dots)
 
 function draw() {
+  // background('black');
   dots.map((dot)=>{
     dot.on();
-    dot.move();
+    // dot.shake();
+    dot.circular();
   })
 }
 
@@ -33,12 +36,21 @@ class Dot {
   }
   on(){
     noStroke();
-    // fill(color('white'))
-    fill(color(random(255),21))
+    fill(color('white'))
+    // fill(color(random(255),81))
     ellipse(this.x, this.y,size,size)
   }
-  move(){
+  shake(){
     this.x += random(-3,3)
     this.y += random(-3,3)
+  }
+  circular() {
+    this.y += sin(frameCount/2 )* 5;
+    this.x += cos(frameCount/2 )* 5;
+  }
+
+  phasing() {
+
+
   }
 }
