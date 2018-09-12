@@ -17,7 +17,7 @@ module.exports = {
             ['/translate-motion.md','dot-animation-translate'],
             ['/modulus.md','dot-animation-periodical'],
             ['/sinus.md', 'dot-animation-circular'],
-            ['/log.md', 'dot-animation-limited']
+            ['/log.md', 'dot-animation-limited'],
         ]
     }
 }
