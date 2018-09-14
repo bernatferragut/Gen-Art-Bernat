@@ -5,7 +5,8 @@ module.exports = {
         nav: [
             {text: "Start", link: '/'},
             {text: 'Introduction', link: 'introduction.md'},
-            {text: 'The Dot', link: 'dot-abstraction.md'},
+            {text: 'Generative Art Course', link: 'dot-abstraction.md'},
+            {text: 'P5JS-Reference', link: 'https://p5js.org/es/reference/'},
         ],
         sidebar: [
             '/',
