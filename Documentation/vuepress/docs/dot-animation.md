@@ -101,13 +101,17 @@ src="https://editor.p5js.org/embed/B1hdy8num"></iframe>
 
 ### Animation: modulus
 
-The modulus operator allow us to define uptrend cycles. These cycles will be limited by the number we apply the modulus operator to. As an example if we apply to an ever increasing number like frameCount modulus 10. It will return us numbers betwee 0-9 and repeating this cycle again and again to inifinity. More examples:
+> OSCILLATIONS
 
-* frameCount % 2 => (0,1...cycle to infinity)
-* frameCount % 5 => (0,1,2,3,4...cycle to inifnity)
-* frameCount % 10 => (0,1,2,3,4,5,6,7,8,9...cycle to infinity)
+The modulus operator allow us to define oscillations. 
 
-So the modulus operaror give us an ascending pattern limited by the number we apply the modulus to. We must repeat that the number we are applying the modulus in this example is framCount which grows all the time.
+These oscillations or cycles will be limited by the number we apply the modulus operator to. As an example if we apply to an ever increasing number like frameCount modulus 10. It will return us numbers betwee 0-9 and repeating this cycle again and again to inifinity. More examples:
+
+* console.log(frameCount % 2)   => 0,1...cycle to infinity
+* console.log(frameCount % 5)   => 0,1,2,3,4...cycle to inifnity
+* console.log(frameCount % 10)  => 0,1,2,3,4,5,6,7,8,9...cycle to infinity
+
+So the modulus operaror give us an ascending pattern limited by the number we apply the modulus to. We must repeat that the number we are applying the modulus in this example is framCount which grows all the time as a source of change.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/rkGMf0pu7)
 
@@ -131,6 +135,10 @@ src="https://editor.p5js.org/embed/rkGMf0pu7"></iframe>
     this.y = h/2 + frameCount % 10; // We limit the cycle to 10 units in y
   }
 ```
+
+> VORTEX MATH
+There is a type of Math called Vortex Math that is circular. It exists only between the number 0-9. In this case the 
+frameCount % 10 => 0-9 would be at the heart of Vortex Math. So keep in mind this modulus as something very important to experiment and discover new interesting patterns.
 
 ### Animation: sin(), cos()
 
