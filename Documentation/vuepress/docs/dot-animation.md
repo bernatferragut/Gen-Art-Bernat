@@ -1,6 +1,6 @@
 # DOT ANIMATION
 
-### Animation: translation
+## Translation
 
 To animate we need to find an argument to animate, in this case we will start to animate the coordiante X. The concept that will fuel the X coordinate movement will be a variable that changes constantly. 
 
@@ -22,54 +22,12 @@ position: relative;"
 src="https://editor.p5js.org/embed/BkqUfLnum"></iframe>
 
 ```javascript
-let w = 732;
-let h = 250;
-let s = 5;
-let dot;
-
-function setup() {
-  frameRate(60); // Attempt to refresh at starting FPS
-  background(51);
-  createCanvas(w, h);
-  dot = new Dot(0, h / 2, s);
-}
-
-function draw() {
-  background('black');
-  dot.on();
-  dot.animate();
-}
-
-// Dot object
-class Dot {
-  // class attributes
-  constructor(x, y, s) {
-    this.x = x | 0;
-    this.y = y | 0;
-    this.size = s | 2;
-  }
-  // class methods
-  on() {
-    noStroke();
-    fill(color('white'))
-    ellipse(this.x, this.y, this.size, this.size)
-  }
-  off() {
-    noStroke();
-    fill(color('black'))
-    ellipse(this.x, this.y, this.size, this.size)
-  }
-  blink() {
-    this.off();
-    setTimeout(() => this.on(), 500);
-  }
   animate() {
-    this.x =  frameCount;;
+    this.x =  frameCount;
   }
-}
 ```
 
-### Animation: rebounding inside the canvas
+## Rebound
 
 We could also simply add to x another value like speed or velocity. This variable will be able to control the amount we translate and the direction when multiplied by a negative number. 
 
@@ -99,9 +57,8 @@ src="https://editor.p5js.org/embed/B1hdy8num"></iframe>
   }
 ```
 
-### Animation: modulus
-
-> OSCILLATIONS
+## Oscillation
+### Modulo
 
 The modulus operator allow us to define oscillations. 
 
@@ -137,16 +94,99 @@ src="https://editor.p5js.org/embed/rkGMf0pu7"></iframe>
 ```
 
 > VORTEX MATH
-There is a type of Math called Vortex Math that is circular. It exists only between the number 0-9. In this case the 
-frameCount % 10 => 0-9 would be at the heart of Vortex Math. So keep in mind this modulus as something very important to experiment and discover new interesting patterns.
 
-### Animation: sin(), cos()
+Vortex Math is a type of Math called circular Math. It exists only between the number 0-9. 
+In this case the frameCount % 10 => 0-9 would be at the heart of Vortex Math. So keep in mind this modulus as something very important to experiment and discover new interesting patterns.
 
-### Animation: Log()
 
-// WE COULD DIVIDE ANIMATION IN TWO BLOCKS
-// ANIMATION1 : TRANSLATION + REBOUND ( CONDITIONALS )
-// ANIMATION2 : MOD + SIN + LOG
+### sin(), cos()
+The modulo technique is great, but it can only easily produce loops that grow linearly and loop abruptly.An easy technique for making animations that appear to grow and recede smoothly is to calculate the sine of the frameCount variable.
+
+The sin() function takes a single parameter, and evaluates to a number from -1 to 1. 
+
+Most of the time you use the sin() function, you should use it in combination with two other values, which determine the amplitude of the oscillation (i.e., how big the numbers get) and the frequency of the oscillation (i.e., how fast it goes).
+
+```diff
+x + (sin(frameCount / y) * z)
+```
+
+where x, y and z are all numbers. Making y bigger will make the oscillation slower; making z bigger will make the oscillation larger. The x value is the oscillation’s center point, i.e., what value is the “resting place” of the oscillation.
+
+[GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/SJYUZayKX)
+
+<iframe 
+frameborder="0" 
+border="0" 
+cellspacing="0"
+style="
+width: 732px; 
+height: 250px; 
+border: 4px solid #000000;
+border-radius: 6px;
+overflow: hidden;
+position: relative;"
+src="https://editor.p5js.org/embed/SJYUZayKX"></iframe>
+
+```javascript
+  oscillate() {
+    this.x =  w/2 + sin(frameCount/20) * 100;
+  }
+```
+
+Finnally if we combine the power of the sin() function with the power of the cos() function we can attend circular movements with even amounts. With uneven amounts we can achieve beautiful elliptical forms and shapes. Circles are the most perfect for in nature, so here we are touching something ... divine.
+
+[GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/SJteE6JFQ)
+
+<iframe 
+frameborder="0" 
+border="0" 
+cellspacing="0"
+style="
+width: 732px; 
+height: 250px; 
+border: 4px solid #000000;
+border-radius: 6px;
+overflow: hidden;
+position: relative;"
+src="https://editor.p5js.org/embed/SJteE6JFQ"></iframe>
+
+```javascript
+  oscillate() {
+    this.x =  w/2 + sin(frameCount/20) * 100;
+    this.y =  h/2 + cos(frameCount/20) * 50;
+  }
+```
+
+## Random
+
+Generative Art starts getting more interesting when we add a surprise factor. This computer generated surprise factor is what is called a random result.
+
+The random() function is accepts either no value, meaning it will return a random value between 0-1. Or we can specify the minimum and maximum value we want and the function will return a value betweeb those chosen ones.
+
+[GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/rJGvEHxdQ)
+
+<iframe 
+frameborder="0" 
+border="0" 
+cellspacing="0"
+style="
+width: 732px; 
+height: 250px; 
+border: 4px solid #000000;
+border-radius: 6px;
+overflow: hidden;
+position: relative;"
+src="https://editor.p5js.org/embed/rJGvEHxdQ"></iframe>
+
+```javascript
+  randomize(){
+  	this.x += random(-3,3);
+    this.y += random(-3,3);
+  }
+```
+
+
+
 
 
 

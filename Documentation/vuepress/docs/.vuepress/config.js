@@ -10,15 +10,15 @@ module.exports = {
         ],
         sidebar: [
             '/',
-            ['/introduction.md','introduction'],
+            ['/introduction.md','generative art'],
             ['/dot-abstraction.md','dot-abstraction'],
             ['/dot-creation.md','dot-creation'],
             ['/dot-animation.md','dot-animation'],
-            ['/sliders.md','dot control: sliders'],
-            ['/translate-motion.md','dot-animation-translate'],
-            ['/modulus.md','dot-animation-periodical'],
-            ['/sinus.md', 'dot-animation-circular'],
-            ['/log.md', 'dot-animation-limited'],
+            ['/sliders.md','sliders'],
+            ['/dot-row.md','dot-row'],
+            ['/dot-matrix.md','dot-matrix'],
+            ['/dot-examples.md', 'dot-examples'],
+            ['/dot-inspiration.md', 'dot-inspiration'],
         ]
     }
 }

@@ -12,7 +12,7 @@ After that, things evolved slowly and only recently with the standarisation of j
 ### P5JS
 P5JS is the web javascript version of the seminal java project for artist called Processing (link). 
 
-Born in 2016 and backed by the great and inspirng teacher Daniel Shiffmann (link), it has been growing stewadily until becobecoming the perfect tool to make code accessible to artists, designers and educators and beginners.
+Born in 2016 and backed by the great and inspirng teacher Daniel Shiffmann (link), it has been growing steadily until becoming the perfect tool to make code accessible to artists, designers, educators and beginners.
 
 ### Goals
 The Goal with this introductory course is for anybody who wants start creating digital art with the computer screen as their canvas to learn the most fundamental basics of designing art with code
