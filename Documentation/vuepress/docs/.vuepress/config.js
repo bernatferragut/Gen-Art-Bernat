@@ -14,7 +14,7 @@ module.exports = {
             ['/dot-abstraction.md','dot-abstraction'],
             ['/dot-creation.md','dot-creation'],
             ['/dot-animation.md','dot-animation'],
-            ['/sliders.md','sliders'],
+            ['/dot-sliders.md','dot-sliders'],
             ['/dot-row.md','dot-row'],
             ['/dot-matrix.md','dot-matrix'],
             ['/dot-examples.md', 'dot-examples'],
