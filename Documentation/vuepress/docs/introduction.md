@@ -34,6 +34,17 @@ The course is divided into:
 8. Llullian art: a subset of Generative Art
 9. Llullian art: examples of the subset
 
+### P5JS Installation
+
+Insert this piece of code in the head tag of your html file and you are good to go.
+
+```html
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+```
+
 ### Influencers
 
 * (Processing.org)[link]
