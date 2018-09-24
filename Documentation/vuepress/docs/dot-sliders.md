@@ -58,9 +58,9 @@ src="https://editor.p5js.org/embed/H1NNBMZFX"></iframe>
 // canvas pararms
 let w = 732;
 let h = 250;
-let s = 5;
 // dot
 let dot;
+let s = 5;
 // global slider params
 let slow = 50;
 let amplitude = 100;
@@ -69,7 +69,7 @@ function setup() {
   // canvas
   background('black');
   createCanvas(w, h);
-  dot = new Dot(0, h / 2, s);
+  dot = new Dot(w/2, h / 2, s);
   // sliders
   s_slow = createSlider(0, 100, 50);
   s_slow.position(20,5);
@@ -142,6 +142,7 @@ src="https://editor.p5js.org/embed/BJ2uv8SFX"></iframe>
 ```javascript
 // Slider S for 'slowness'
 // Slider A for 'amplitude'
+// Slider sz for 'size'
 
 // canvas pararms
 let w = 732;
@@ -158,23 +159,28 @@ function setup() {
   createCanvas(w, h);
   // sliders
   s_slow = createSlider(0, 100, 50);
-  s_slow.position(20,5);
-  s_amplitude =  createSlider(0, 200, 100);
-  s_amplitude.position(20,25);
+  s_slow.position(20, 5);
+  s_amplitude = createSlider(0, 200, 100);
+  s_amplitude.position(20, 25);
+  s_size = createSlider(0, 10, 5);
+  s_size.position(20, 45);
 }
 
 function draw() {
-  // background('black');
+  background('black');
   // sliders control
-  text("S",5 ,20);
+  text("S", 5, 20);
   slow = s_slow.value();
-  text("A",5 ,40);
- 	amplitude = s_amplitude.value();
+  text("A", 5, 40);
+  amplitude = s_amplitude.value();
+  text("sz", 5, 60);
+  s = s_size.value();
   // dot creation
-  background(0);
-  for(let i = 0; i < 5; i++){
-  	dot = new Dot(w/2+(sin(frameCount/(i+slow))*(i+amplitude)),h/5+(i*35),s);
-  	dot.on();
+  for (let i = 0; i < 5; i++) {
+    dot = new Dot(w / 2 + (sin(frameCount / (i + slow)) * (i + amplitude)), // x value
+      h / 5 + (i * 35), //  y value
+      s); // s value
+    dot.on();
   }
 }
 
@@ -189,12 +195,21 @@ class Dot {
   // class methods
   on() {
     noStroke();
-    fill(color('white'))
-    // fill(color(random(255),19))
-    ellipse(this.x, this.y, this.size, this.size)
+    fill(color('white'));
+    // fill(color(random(255),19));
+    ellipse(this.x, this.y, this.size, this.size);
+  }
+  off() {
+    noStroke();
+    fill(color('black'));
+    ellipse(this.x, this.y, this.size, this.size);
+  }
+  blink() {
+    this.off();
+    setTimeout(() => this.on(), 500);
   }
   oscillate() {
-    this.x =  w/2 + sin(frameCount/slow) * amplitude;
+    this.x = w / 2 + sin(frameCount / slow) * amplitude;
   }
 }
 ```
