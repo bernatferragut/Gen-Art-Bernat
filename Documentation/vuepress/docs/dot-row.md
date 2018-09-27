@@ -1,9 +1,7 @@
 # DOT-ROW
 
-## Multiplication
+## Row multiplication
 After understanding how the dot conception, creation and animation, now it's time to enter into the multiplication of the dot in the canvas. The multiplication it's a fundamental advantage of working with a computer allowing us to do things that by hand would be very difficult or would take a long time.
-
-### Row / Column Multiplication
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/B1Ck3jPKm)
 
@@ -73,7 +71,7 @@ class Dot {
 }
 ```
 
-### Creating a Row List
+## Row List
 
 * In this example we create a row list under the setup function. 
 * Once this list is created we apply the map method to each of the dots.
@@ -100,10 +98,12 @@ src="https://editor.p5js.org/embed/rkMk2btKm"></iframe>
 ```javascript
 // Slider Y for 'Y_Position'
 // Slider R for 'random_Position'
+// Slider A for 'alpha'
 // canvas pararms
 let w = 732;
 let h = 250;
 let s = 3;
+let alph = 255;
 // dot
 let dot;
 let spacing = 5;
@@ -120,6 +120,8 @@ function setup() {
   s_rowY_pos.position(25, 7);
   s_rnd = createSlider(0, 100, 3);
   s_rnd.position(25, 24);
+  s_alph = createSlider(0, 255, 255);
+  s_alph.position(25, 41);
 
   // dot row list creation
   for (let x = spacing / 2; x < w; x += spacing) {
@@ -128,12 +130,14 @@ function setup() {
 }
 
 function draw() {
-  background('black');
+  background(0, alph); // color(gray, [alpha]) both 0-255
   // sliders control
   text("Y", 5, 20);
   rowY = s_rowY_pos.value();
   text("R", 5, 38);
   rnd = s_rnd.value();
+  text("A", 5, 56);
+  alph = s_alph.value();
 
   // row creation
   dotList.map((dot) => {

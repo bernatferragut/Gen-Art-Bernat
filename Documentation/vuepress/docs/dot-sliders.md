@@ -199,15 +199,6 @@ class Dot {
     // fill(color(random(255),19));
     ellipse(this.x, this.y, this.size, this.size);
   }
-  off() {
-    noStroke();
-    fill(color('black'));
-    ellipse(this.x, this.y, this.size, this.size);
-  }
-  blink() {
-    this.off();
-    setTimeout(() => this.on(), 500);
-  }
   oscillate() {
     this.x = w / 2 + sin(frameCount / slow) * amplitude;
   }
