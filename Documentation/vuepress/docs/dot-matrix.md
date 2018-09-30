@@ -83,7 +83,7 @@ class Dot {
 }
 ```
 
-## Matrix experiment
+## Matrix experiment-1
 * We apply the random method to the matrix.
 * We play with size, x, y and transparency to create a special effect
 * We add sliders and button to reset to default position
@@ -192,3 +192,9 @@ class Dot {
   }
 }
 ```
+
+## matrix experiment-2 
+> matrix training
+
+## matrix experiment-3
+> desktop modulus cycle

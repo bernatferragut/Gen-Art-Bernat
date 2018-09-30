@@ -17,7 +17,6 @@ module.exports = {
             ['/dot-sliders.md','dot-sliders'],
             ['/dot-row.md','dot-row'],
             ['/dot-matrix.md','dot-matrix'],
-            ['/dot-examples.md', 'dot-examples'],
             ['/dot-inspiration.md', 'dot-inspiration'],
         ]
     }
