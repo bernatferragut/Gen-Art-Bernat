@@ -121,6 +121,7 @@ let spacing = 21;
 let dotList = [];
 let rnd = 3;
 let alph = 255;
+let colors = [0,127, 255];
 
 // Matrix creation function
 function matrix() {
@@ -195,6 +196,114 @@ class Dot {
 
 ## matrix experiment-2 
 > matrix training
+* We apply the random method to the matrix.
+* We play with size, x, y and transparency to create a special effect
+* We add sliders and button to reset to default position
+
+[GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/Hy437sycQ)
+
+<iframe
+frameborder="0"
+border="0" 
+cellspacing="0"
+style="
+width: 732px; 
+height: 250px; 
+border: 4px solid #000000;
+border-radius: 6px;
+overflow: hidden;
+position: relative;"
+src="https://editor.p5js.org/embed/Hy437sycQ"></iframe>
+
+```javascript
+// Slider s for Size'
+// Slider rnd for Random'
+// Slider alph for 'Alpha'
+// Reset buttons to restart default params
+
+// canvas pararms
+let w = 732;
+let h = 250;
+let s = 2;
+let gds;
+// dot
+let dot;
+// slider params
+let spacing = 21;
+let dotList = [];
+let rnd = 3;
+let alph = 255;
+let colors = [0,127,255];
+
+// Matrix creation function
+function matrix() {
+  background('black');
+  dotList = []; //  reset the list
+  s_size.value(2);
+  s_rnd.value(0);
+  // dotList creation
+  for (let x = spacing / 2; x < w; x += spacing) {
+    for (let y = spacing / 2; y < h; y += spacing) {
+      dotList.push(new Dot(x, y, s));
+    }
+  }
+}
+
+function setup() {
+  // canvas
+  createCanvas(w, h);
+  // sliders
+  s_size = createSlider(1, 50, 2);
+  s_size.position(25, 7);
+  s_rnd = createSlider(0, 10, 0);
+  s_rnd.position(25, 25);
+  s_alph = createSlider(0, 50, 0);
+  s_alph.position(25, 45);
+  // buttons
+  b_reset = createButton('reset');
+  b_reset.position(5, 225);
+  matrix();
+}
+
+function draw() {
+  background(0, alph);
+  // sliders control
+  text("s", 5, 20);
+  s = s_size.value();
+  text('rnd', 5, 40);
+  rnd = s_rnd.value();
+  text('a', 5, 60);
+  alph = s_alph.value();
+  // button
+  b_reset.mousePressed(matrix);
+
+  // dotList mapping actions
+  dotList.map((dot) => {
+    dot.on(s);
+    dot.randomness(rnd);
+  })
+}
+
+// Dot object
+class Dot {
+  // class attributes
+  constructor(x, y, s) {
+    this.x = x | 0;
+    this.y = y | 0;
+    this.size = s | 2;
+  }
+  // class methods 
+  on(s) { // here we pass the size parameter to affect this method
+    noStroke();
+    fill(colors[int(random(0,2))]); //  random integer in P5JS
+    ellipse(this.x, this.y, s, s);
+  }
+  randomness(rnd) {
+    this.x += random(-rnd, rnd);
+    this.y += random(-rnd, rnd);
+  }
+}
+```
 
 ## matrix experiment-3
 > desktop modulus cycle
