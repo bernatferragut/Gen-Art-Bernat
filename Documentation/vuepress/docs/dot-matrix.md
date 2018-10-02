@@ -324,90 +324,65 @@ position: relative;"
 src="https://editor.p5js.org/embed/HksUUHe9m"></iframe>
 
 ```javascript
-// Slider s for Size'
-// Slider rnd for Random'
-// Slider alph for 'Alpha'
-// Reset buttons to restart default params
-
-// canvas pararms
-let w = 732;
+// variables
+let w = 720;
 let h = 250;
-let s = 2;
-// dot
-let dot;
-// slider params
-let spacing = 9;
-let dotList = [];
-let rnd = 3;
-let alph = 0;
-let colors = [0, 25, 127, 200, 255];
+let size = 2;
+let spacing = 90;
+let dots = [];
 
-// Matrix creation function
-function matrix() {
+function setup() {
+  frameRate(10);
+  createCanvas(w, h);
   background('black');
-  dotList = []; //  reset the list
-  s_rnd.value(0);
-  s_alph.value(25);
-  // dotList creation
-  for (let x = spacing / 2; x < w; x += spacing) {
-    for (let y = spacing / 2; y < h; y += spacing) {
-      dotList.push(new Dot(x, y, s));
+  // dot matrix generation
+  for(let x = spacing/2; x < w; x += spacing){
+    for(let y = spacing/2; y < h; y += spacing) {
+      dots.push(new Dot(x, y));
     }
   }
 }
 
-function setup() {
-  // canvas
-  createCanvas(w, h);
-  // sliders
-  s_rnd = createSlider(0, 10, 0);
-  s_rnd.position(25, 05);
-  s_alph = createSlider(0, 50, 25);
-  s_alph.position(25, 25);
-  // buttons
-  b_reset = createButton('reset');
-  b_reset.position(5, 225);
-  matrix();
-}
+console.log(dots)
 
 function draw() {
-  background(0, alph);
-  // sliders control
-  fill(255);
-  text('rnd', 5, 20);
-  rnd = s_rnd.value();
-  text('a', 5, 40);
-  alph = s_alph.value();
-  // button
-  b_reset.mousePressed(matrix);
-
-  // dotList mapping actions
-  dotList.map((dot) => {
-    s = sin(frameCount / 100) * 3;
-    dot.on(s);
-    dot.randomness(rnd);
+  // background('black');
+  dots.map((dot)=>{
+    dot.on();
+    // dot.shake();
+    dot.phasing();
+    // dot.circular();
   })
 }
 
-// Dot object
+// object
 class Dot {
-  // class attributes
-  constructor(x, y, s) {
-    this.x = x | 0;
-    this.y = y | 0;
-    this.size = s | 2;
+  constructor(x,y){
+    this.x = x;
+    this.y = y;
   }
-  // class methods 
-  on(s) { // here we pass the size parameter to affect this method
+  on(){
     noStroke();
-    fill(colors[int(random(0, 4))]);
-    ellipse(this.x, this.y, s, s);
+    fill(color('white'))
+    // fill(color(random(255),81))
+    ellipse(this.x, this.y,size,size)
   }
-  randomness(rnd) {
-    this.x += random(-rnd, rnd) ;
-    this.y += random(-rnd, rnd) ;
-    // this.x += random(-rnd, rnd) + sin(frameCount) * 10;
-    // this.y += random(-rnd, rnd) + sin(frameCount) * 20;
+  shake(){
+    this.x += random(-3,3)
+    this.y += random(-3,3)
+  }
+  circular() {
+    this.y += sin(frameCount/2 )* 5;
+    this.x += cos(frameCount/2 )* 5;
+  }
+
+  phasing() {
+    this.y -= frameCount % 5-7; // slider for 7 ;)
+    this.x += frameCount % 5;
+  }
+  phasing2() {
+    this.y -= frameCount % 10-5.5;
+    this.x += frameCount % 5;
   }
 }
 ```

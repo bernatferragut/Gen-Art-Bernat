@@ -24,7 +24,8 @@ function draw() {
   dots.map((dot)=>{
     dot.on();
     // dot.shake();
-    dot.circular();
+    dot.phasing();
+    // dot.circular();
   })
 }
 
@@ -50,7 +51,11 @@ class Dot {
   }
 
   phasing() {
-
-
+    this.y -= frameCount % 5-7;
+    this.x += frameCount % 5;
+  }
+  phasing2() {
+    this.y -= frameCount % 10;
+    this.x += frameCount % 5;
   }
 }
