@@ -316,7 +316,7 @@ border="0"
 cellspacing="0"
 style="
 width: 732px; 
-height: 250px; 
+height: 900px; 
 border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
@@ -324,17 +324,27 @@ position: relative;"
 src="https://editor.p5js.org/embed/HksUUHe9m"></iframe>
 
 ```javascript
-// variables
-let w = 720;
-let h = 250;
+// Sliders
+// fx1 to change the modulo effect
+
+// canvas vars
+let w = 732;
+let h = 900;
 let size = 2;
 let spacing = 90;
+// dots vars
 let dots = [];
+let fx1 = 5;
+let colors = [0,50,100,150,200,255];
+let col = 0;
 
 function setup() {
   frameRate(10);
   createCanvas(w, h);
   background('black');
+  // sliders
+  s_fx1 = createSlider(0,10,5);
+  s_fx1.position(20,10);
   // dot matrix generation
   for(let x = spacing/2; x < w; x += spacing){
     for(let y = spacing/2; y < h; y += spacing) {
@@ -343,15 +353,18 @@ function setup() {
   }
 }
 
-console.log(dots)
-
 function draw() {
   // background('black');
+  // sliders
+  text('fx1', 4,23);
+  fx1 = s_fx1.value();
+  // col = colors[int(random(6))];
+  col = 255;
+  
   dots.map((dot)=>{
-    dot.on();
-    // dot.shake();
-    dot.phasing();
-    // dot.circular();
+    dot.on(col);
+    dot.phasing(fx1);
+    ;
   })
 }
 
@@ -361,10 +374,10 @@ class Dot {
     this.x = x;
     this.y = y;
   }
-  on(){
+  on(col){
     noStroke();
-    fill(color('white'))
-    // fill(color(random(255),81))
+    fill(col)
+    // fill(color(random(255),200));
     ellipse(this.x, this.y,size,size)
   }
   shake(){
@@ -375,13 +388,8 @@ class Dot {
     this.y += sin(frameCount/2 )* 5;
     this.x += cos(frameCount/2 )* 5;
   }
-
-  phasing() {
-    this.y -= frameCount % 5-7; // slider for 7 ;)
-    this.x += frameCount % 5;
-  }
-  phasing2() {
-    this.y -= frameCount % 10-5.5;
+  phasing(fx1) {
+    this.y -= frameCount % 5-fx1; // slider for fx1
     this.x += frameCount % 5;
   }
 }
