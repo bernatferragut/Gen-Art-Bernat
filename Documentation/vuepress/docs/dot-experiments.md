@@ -1,6 +1,6 @@
 # EXPERIMENTS
 
-This examples have been taken from experiments I have been doing in the last year over online platforms like codepen and glitch. Take the time to read and understant the code and enjoy the beauty of generative art.
+This examples have been taken from experiments I have been doing in the last year over online platforms like codepen and glitch. Take the time to read and understand the code, enjoy the beauty of generative art.
 
 [CODEPEN EXAMPLES](https://codepen.io/collection/DJKJgP/)
 
@@ -8,12 +8,95 @@ This examples have been taken from experiments I have been doing in the last yea
 
 In the following experiments I have followed some design principles for simplicity:
 * Only the dot object
-* Only Black and White Colors
+* Only black and white colors
 * Only transparence as accent
 
 ## Experiment-1
+* Simple example of dots in circular motion.
+* We can control the radius and speed of the dots with 2 sliders.
+* Open the possibility to experiment with multiple orbital trajectories.
+
+[GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/BJAR_Z_5X)
+
+<iframe
+frameborder="0"
+border="0" 
+cellspacing="0"
+style="
+width: 732px; 
+height: 250px; 
+border: 4px solid #000000;
+border-radius: 6px;
+overflow: hidden;
+position: relative;"
+src="https://editor.p5js.org/embed/BJAR_Z_5X"></iframe>
+
+```javascript
+let w = 732;
+let h = 250;
+let s = 2;
+let dot;
+let dotList = [];
+let radius = 100;
+let number = 6
+let speed = 20;
+
+function setup() {
+  // canvas
+  background('black');
+  createCanvas(w, h);
+  // sliders
+  s_radius = createSlider(1,120, 80);
+  s_radius.position(15,10);
+  s_speed = createSlider(1,100,20);
+  s_speed.position(15,30);
+  // dots to the list
+  for(let i=0; i<number; i++){
+    dotList.push( new Dot(w/2, h / 2, s));
+  }
+}
+
+function draw() {
+  //canvas
+  background(0,30);
+  // sliders
+  fill(255);
+  text('r', 5,23);
+  radius = s_radius.value();
+  text('s', 5,43);
+  speed = s_speed.value();
+	for(let i=0; i<dotList.length; i++  ){
+    // radius = random(20,50);
+    dotList[i].on();
+  	dotList[i].circle(i);
+  }
+}
+
+// Dot object
+class Dot {
+  // class attributes
+  constructor(x, y, s) {
+    this.x = x | 0;
+    this.y = y | 0;
+    this.size = s | 2;
+  }
+  // class methods
+  on() {
+    noStroke();
+    // fill(255,random(255))
+    ellipse(this.x, this.y, this.size, this.size)
+    
+  }
+  circle(i) {
+    this.x =  w/2 + sin(frameCount/speed+i) * radius;
+    this.y =  h/2 + cos(frameCount/speed+i) * radius;
+  }
+}
+```
+
+## Experiment-2
 * Simple example of a particle randomly moving and rebounding the edges of the canvas
-* We have added velocity on x and y plus some gravity to add sort of real physics to the movement.
+* We have added velocity on x and y plus some gravity adding real physics to the movement.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/H1HwpYvq7)
 
@@ -103,6 +186,7 @@ class Dot {
   }
 }
 ```
+## Experiment-2b
 * Same example with several particles moving and rebounding on the edges of the canvas.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/ByeBwqW5Q)
@@ -164,8 +248,6 @@ function draw() {
   });
 
 }
-
-
 // Dot object
 class Dot {
   // class attributes
@@ -203,9 +285,10 @@ class Dot {
 }
 ```
 
-## Experiment-2
+## Experiment-3
 
 * Simple vertical particle system with one parameter to add random.
+* A sabre of light to have fun with.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/r1RDi5PqX)
 
@@ -296,9 +379,6 @@ class Dot {
 }
 ```
 
-## Experiment-3
-* on-fire
-
-## YOUR TURN
+## Your experiments
 * From now on you are on your own. May the force be with you...
-* (P5JS online editor)[https://editor.p5js.org/]
+* [P5JS online editor](https://editor.p5js.org/)
