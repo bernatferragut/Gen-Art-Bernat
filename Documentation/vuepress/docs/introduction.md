@@ -22,17 +22,15 @@ I ask people to know at least a little bit of javascript, enough so can follow t
 If you need a more introductory course here I give a fantastic link of Allisson Parish (link) who has been another great inspiration to create this course for me and it's a perfect complement to better understand some of the concepts we will dive into.
 
 ### Structure
-The course is divided into:
+This introduction to programming with p5JS course is divided into:
 
-1. The Dot: abstraction, creation and simple translation animation
-2. Advanced animation through mathematical operators and functions
-3. Sliders: Value life manipulation
-4. Rows and Matrix or indexed and nested loops
-5. Mouse interaction
-6. Algorithmic art: combining the first 5 sections together with some examples
-7. Generative art: Theory and examples
-8. Llullian art: a subset of Generative Art
-9. Llullian art: examples of the subset
+1. Dot class abstraction
+2. dot object creation
+3. dot animation basics
+4. dot sliders
+5. dot - row
+6. dot - matrix
+7. dot - experiments
 
 ### P5JS Installation
 
@@ -47,11 +45,10 @@ Insert this piece of code in the head tag of your html file and you are good to 
 
 ### Influencers
 
-* (Processing.org)[link]
-* (P5js.org)[link]
-* (DanielShiffman.org)[link]
-* (AllisonParish)[link]
-* (bok.org)[link]
-* ...
+* (Processing.org)[https://processing.org/]
+* (P5js.org)[https://p5js.org/]
+* (DanielShiffman)[https://shiffman.net/]
+* (AllisonParish)[http://www.decontextualize.com/]
+* (bok.org)[https://bost.ocks.org/mike/]
 
 
