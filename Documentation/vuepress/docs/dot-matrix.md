@@ -7,7 +7,7 @@ Creating a 2d Matrix of dots is the natural evloution.
 
 We will nest inside the first row loop another loop reperesanting our columns. That way we will have the control to create as many dots as we wish in our canvas and the power to control them individually.
 
-Once the Matrix is defined, we will be able to recall the different methods we created in the past and any new one that can help us go in any new direction we want.
+Once the Matrix is defined, we will be able to recall the different methods we created in the past and any new one that can help us go in any new direction we wish to take.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/rJVqwSqFQ)
 
@@ -195,8 +195,8 @@ class Dot {
 
 ## matrix experiment-2 
 > matrix training
-* Variation with slight size variation based on the sin() function
-* Color in the scale grey randomization for blinking light effects
+* Variation with slight size variation based on the sin() function.
+* Random color in the grey scale for blinking light effects.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/Hy437sycQ)
 
@@ -303,10 +303,10 @@ class Dot {
 ```
 
 ## matrix experiment-3
-> desktop modulus cycle
+> desktop modulo cycle
 
 * We apply the random method to the matrix.
-* We play with the translate and modulus cycle in both axis.
+* We play with the translate and modulo cycle in both axis.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/HksUUHe9m)
 

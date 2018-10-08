@@ -2,7 +2,7 @@
 
 ## Dot object instantiation
 
-Inside the dot class we create the methods or functions on() and off() which will allow us to turn the dot ON/OFF at will over the screen. This way we can consider that the dot is like a dot of light, like a light bulb that we can control and switch it ON/OFF to produce different kind of effects.
+Inside the dot class we create the methods or functions on() and off() which will allow us to turn the dot ON/OFF at will over the screen. This way we can consider the dot is like a dot of light, like a light bulb that we can control and switch it ON/OFF to produce different kind of effects.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/HJXaAYdOX)
 
@@ -41,11 +41,11 @@ Anything we define here will be called all the time.
 
 ## Timing
 
-By default in P5JS update() function the time defined by Frame Per Seconds (FPS) is of 60FPS.
+By default in P5JS update() function the time defined by Frame Per Seconds **(FPS)** is of 60FPS.
 
-If we want to change the frame rate or the number of repetitions in the loop we must define in the setup function the frameRate. This is the framerate will be called inside the update() function.
+If we want to change the frame rate or the number of repetitions in the loop we must define in the setup function the **frameRate**. This **framerate** will be called inside the update() function.
 
-That way we can control de speed of our animation from 60FPS to just 1 FPS as an example.
+That way we can control the speed of our animation from 60FPS to just 1 FPS as an example.
 
 ```javascript
 // Define the desired FPS
@@ -76,7 +76,7 @@ overflow: hidden;
 position: relative;"
 src="https://editor.p5js.org/embed/B1rYAKS_m"></iframe>
 
-In the example we call everysecond a function which set time out dot.on() every half second
+In the example we call every second a function which set time out dot.on() every half second
 (500 ms) giving the desired blinking effect.
 
 ```javascript

@@ -95,8 +95,8 @@ class Dot {
 ```
 
 ## Experiment-2
-* Simple example of a particle randomly moving and rebounding the edges of the canvas
-* We have added velocity on x and y plus some gravity adding real physics to the movement.
+* Simple example of a particle randomly moving and rebounding the edges of the canvas.
+* We have added velocity on **x** and **y** plus some gravity adding real physics to the movement.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/H1HwpYvq7)
 
@@ -287,8 +287,8 @@ class Dot {
 
 ## Experiment-3
 
-* Simple vertical particle system with one parameter to add random.
-* A sabre of light to have fun with.
+* Simple vertical particle system with one parameter to add randomness.
+* A sabre of light to have fun with!
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/r1RDi5PqX)
 
