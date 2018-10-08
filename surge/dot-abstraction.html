@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Generative Art | DOT ABSTRACTION</title>
+    <meta name="description" content="Introduction to Generative Art with P5.js">
+    
+    
+    <link rel="preload" href="/assets/css/9.styles.a42b5e17.css" as="style"><link rel="preload" href="/assets/js/app.90e5777f.js" as="script"><link rel="preload" href="/assets/js/7.ad9b7ee6.js" as="script"><link rel="prefetch" href="/assets/js/5.8d2ea01a.js"><link rel="prefetch" href="/assets/js/1.bca2d09c.js"><link rel="prefetch" href="/assets/js/2.06225f88.js"><link rel="prefetch" href="/assets/js/3.e716bd02.js"><link rel="prefetch" href="/assets/js/4.f901693a.js"><link rel="prefetch" href="/assets/js/0.a7364aaf.js"><link rel="prefetch" href="/assets/js/6.250b2a22.js"><link rel="prefetch" href="/assets/js/8.68a36712.js">
+    <link rel="stylesheet" href="/assets/css/9.styles.a42b5e17.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Generative Art
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Start</a></div><div class="nav-item"><a href="/introduction.html" class="nav-link">Introduction</a></div><div class="nav-item"><a href="/dot-abstraction.html" class="nav-link router-link-exact-active router-link-active">Generative Art Course</a></div><div class="nav-item"><a href="https://p5js.org/es/reference/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  P5JS-Reference
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Start</a></div><div class="nav-item"><a href="/introduction.html" class="nav-link">Introduction</a></div><div class="nav-item"><a href="/dot-abstraction.html" class="nav-link router-link-exact-active router-link-active">Generative Art Course</a></div><div class="nav-item"><a href="https://p5js.org/es/reference/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  P5JS-Reference
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/introduction.html" class="sidebar-link">generative art</a></li><li><a href="/dot-abstraction.html" class="active sidebar-link">dot-abstraction</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dot-creation.html" class="sidebar-link">dot-creation</a></li><li><a href="/dot-animation.html" class="sidebar-link">dot-animation</a></li><li><a href="/dot-sliders.html" class="sidebar-link">dot-sliders</a></li><li><a href="/dot-row.html" class="sidebar-link">dot-row</a></li><li><a href="/dot-matrix.html" class="sidebar-link">dot-matrix</a></li><li><a href="/dot-experiments.html" class="sidebar-link">dot-experiments</a></li></ul></div><div class="page"><div class="content"><h1 id="dot-abstraction"><a href="#dot-abstraction" aria-hidden="true" class="header-anchor">#</a> DOT ABSTRACTION</h1><p>The creation and understanding of this abstraction is the foundation of html canvas art.</p><p>We define what it 'feels' to be a dot through a <strong>class</strong>. The creation of this abstract template is the foundation for creating pixel/dot art. Once this object is 'grasped' we can start experimenting and exploring the canvas.</p><p>The <strong>Dot class</strong> is formed of 2 main elements: Attributes and Methods.</p><ol><li>Arrtibutes are defined in the construction function</li></ol><blockquote><p>Define the minimal amount of attributes we need:</p></blockquote><ul><li>2d space position (x, y) coordinates.</li><li>size.</li></ul><ol start="2"><li>The Methods will be the different behaviours will will give to the <strong>Dot class</strong></li></ol><blockquote><p>Define the minimal amount of methods we need to make the dot behave:</p></blockquote><ul><li>on: to make them appear - switching the light on.</li><li>off: to make them disappear - switching the light off.</li></ul><blockquote><p>Please have as a reference always the P5JS Reference page: (P5JS)[link]</p></blockquote><h3 id="concepction-of-the-dot-class"><a href="#concepction-of-the-dot-class" aria-hidden="true" class="header-anchor">#</a> Concepction of the Dot Class</h3><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// Dot object</span>
+<span class="token keyword">class</span> <span class="token class-name">Dot</span> <span class="token punctuation">{</span>
+<span class="token comment">// class attributes</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+    <span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">// class methods</span>
+  <span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">noStroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span>
+    <span class="token function">ellipse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">noStroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token function">ellipse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="dot-class-with-parameteres"><a href="#dot-class-with-parameteres" aria-hidden="true" class="header-anchor">#</a> Dot Class with parameteres</h3><p>In this class variation we include the possibility of passing external parameters to the constructor function:</p><ul><li>x,y coordinates</li><li>size</li><li>In case we don't pass any parameter we give the default one after the pipe symbol (|)</li></ul><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// Dot object</span>
+<span class="token keyword">class</span> <span class="token class-name">Dot</span> <span class="token punctuation">{</span>
+<span class="token comment">// class attributes</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>s<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>size <span class="token operator">=</span> s <span class="token operator">|</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">// class methods</span>
+  <span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">noStroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span>
+    <span class="token function">ellipse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">noStroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token function">ellipse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>MIT Licensed | © 2018-2019 Bernat Ferragut All Right Reserved</strong></p></div><div class="content edit-link"><!----><!----></div><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/introduction.html" class="prev">
+          generative art
+        </a></span><span class="next"><a href="/dot-creation.html">
+          dot-creation
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/7.ad9b7ee6.js" defer></script><script src="/assets/js/app.90e5777f.js" defer></script>
+  </body>
+</html>

@@ -382,3 +382,5 @@ class Dot {
 ## Your experiments
 * From now on you are on your own. May the force be with you...
 * [P5JS online editor](https://editor.p5js.org/)
+
+**MIT Licensed | © 2018-2019 Bernat Ferragut All Right Reserved**

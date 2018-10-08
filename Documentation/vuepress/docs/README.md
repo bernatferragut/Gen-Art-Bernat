@@ -10,5 +10,5 @@ features:
 #   details: Good design is at heart
 # - title: Simple
 #   details: Simple incremental code
-footer: MIT Licensed | © 2018-2019 All Right Reserved | Bernat Ferragut 
+footer: MIT Licensed | © 2018-2019 Bernat Ferragut All Right Reserved 
 ---

@@ -184,6 +184,7 @@ src="https://editor.p5js.org/embed/rJGvEHxdQ"></iframe>
     this.y += random(-3,3);
   }
 ```
+**MIT Licensed | © 2018-2019 Bernat Ferragut All Right Reserved**
 
 
 
