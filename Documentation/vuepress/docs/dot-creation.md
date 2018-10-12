@@ -122,7 +122,75 @@ class Dot {
   }
 }
 ```
-**MIT Licensed | © 2018-2019 Bernat Ferragut All Right Reserved**
+
+## Blinking
+
+After seeing how the blinking function works and its relation with timing, now we will show you a simple way of achieving the same result.
+
+* We will leave the FPS as standard 60 FPS 
+* We focus in animating the alpha channels - transparency- of the color.
+
+
+[GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/Hy9NS13cX)
+
+<iframe 
+frameborder="0" 
+border="0" 
+cellspacing="0"
+style="
+width: 732px; 
+height: 250px; 
+border: 4px solid #000000;
+border-radius: 6px;
+overflow: hidden;
+position: relative;"
+src="https://editor.p5js.org/embed/Hy9NS13cX"></iframe>
+
+In the example we call every second a function which set time out dot.on() every half second
+(500 ms) giving the desired blinking effect.
+
+```javascript
+let w = 732;
+let h = 250;
+let s = 5;
+let spacing = 20;
+let dot;
+let blinker;
+
+function setup() {
+  frameRate(1); // Attempt to refresh at starting FPS
+	background(51);
+	createCanvas(w, h);
+	dot = new Dot(w/2, h/2, s);
+}
+
+function draw() {
+  background('black');
+  dot.blink();
+}
+
+// Dot object
+class Dot {
+// class attributes
+  constructor(x,y,s){
+    this.x = x | 0;
+    this.y = y | 0;
+    this.size = s | 2;
+  }
+// class methods
+  on(){
+    ellipse(this.x, this.y,this.size,this.size)
+  }
+  blink(){
+		noStroke();
+		blinker = (frameCount % 2) * 255; // here we achieve the same result in a simple way
+		console.log(blinker); // we will study this in the animation section
+		fill(blinker);
+		dot.on();
+  }
+}
+```
+**MIT Licensed | © 2018-2019 Bernat Ferragut All Right Reserved | [bernatferragut.com](http://bernatferragut.com/)**
 
 
 

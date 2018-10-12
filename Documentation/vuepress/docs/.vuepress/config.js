@@ -1,6 +1,6 @@
 module.exports = {
     title: "Generative Art",
-    description: "Introduction to Generative Art with P5.js",
+    description: "Generative Art with P5.js by Bernat Ferragut",
     themeConfig: {
         nav: [
             {text: "Start", link: '/'},
