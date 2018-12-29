@@ -5,11 +5,12 @@ let props = {
   canvas : {
     w : window.innerWidth,
     h : window.innerHeight,
-    spacing : 5
+    spacing : 10
   },
   circle : {
-    size : 2
-  }
+    size : 4
+  },
+  colors : ['white', 'black', 'red', 'green', 'yellow']
 }
 
 // canvas resizing
@@ -26,7 +27,7 @@ function setup() {
   for(let x=0; x<props.canvas.w; x += props.canvas.spacing) {
     for(let y=0; y<props.canvas.h; y += props.canvas.spacing ) {
       noStroke();
-      fill(color(random(255),0,0));
+      fill(props.colors[int(random(0,5))]);
       ellipse(x,y,props.circle.size, props.circle.size)
     }
   }

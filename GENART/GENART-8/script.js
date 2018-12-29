@@ -10,8 +10,8 @@
     // variables
     let canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),
-        w = canvas.width = window.innerWidth,
-        h = canvas.height =  window.innerHeight,
+        w = canvas.width = 4000// window.innerWidth,
+        h = canvas.height = 4000// window.innerHeight,
         pi = Math.PI,
         pi2 = pi*2,
         piD2 = pi/2,

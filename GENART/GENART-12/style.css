@@ -1,5 +1,9 @@
-* {
+body, html {
     margin: 0px;
     padding: 0px;
     background-color: black;
+  }
+
+  button {
+    float:left;
   }
