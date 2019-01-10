@@ -1,0 +1,13 @@
+/* CSS */
+
+body {
+    margin:0px;
+    padding: 0px;
+    background-color: #004358;
+    height: 100vh;
+}
+
+canvas {
+    background-color: #004358;
+    /* border: 1px solid black; */
+}

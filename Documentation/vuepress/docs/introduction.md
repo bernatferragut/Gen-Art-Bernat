@@ -10,7 +10,9 @@ Later came the first days of the Internet in the early 90's with a plugin called
 After that, came Processing and recently with the standarisation of javascript as the programming language of the web new specialised libraries have appeared to make life easier for artists who want to express themselves in the frontiers between design and code.
 
 ### P5JS
-P5JS is the web javascript version of the seminal java project for artists called [Processing](https://processing.org/). 
+
+P5JS was created by [Lauren McCarthy](http://lauren-mccarthy.com/) and is developed by a community of collaborators with the support of the Processing Foundation and NYU ITP.
+It represents the javascript web version of the seminal java project for artists called [Processing](https://processing.org/). 
 
 Born in 2016 and backed by the great and inspirng teacher [DanielShiffman](https://shiffman.net/), it has been growing steadily until become the perfect tool to make code accessible to artists, designers, educators and beginners.
 
@@ -50,6 +52,7 @@ Insert this piece of code in the head tag of your html file and you will be good
 
 * [Processing.org](https://processing.org/)
 * [P5js.org](https://p5js.org/)
+* [Lauren McCarthy](http://lauren-mccarthy.com/)
 * [DanielShiffman](https://shiffman.net/)
 * [AllisonParish](http://www.decontextualize.com/)
 * [bok.org](https://bost.ocks.org/mike/)
