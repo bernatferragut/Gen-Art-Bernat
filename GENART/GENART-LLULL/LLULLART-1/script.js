@@ -2,18 +2,26 @@
 
 const COLORS = ['red', 'green', 'yellow']
 let w = window.innerWidth, h = window.innerHeight
+let forms = []
+let square, triangle, circle
 
 function setup(){
     // console.log('>_setup ready')
     createCanvas(w, h)
     background(0)
     rectMode(CENTER)
+    square = new Square(w/2, h/2, 10, 'rgba(255,0,0,0.5)')
+    // creer triangle
+    // creer circle
+    // creer liste de 3 objets   
 }
 
 function draw(){
-    // console.log('>_drawing')
+    background(0)
     fill(255, 10)
-    rect(w/2, h/2, 10, 10)
-    rect(w/2, h/2, mouseX, mouseY)
+    form.create()
+    form.randMove()
 }
+
+
 
