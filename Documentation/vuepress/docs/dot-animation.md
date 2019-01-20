@@ -19,6 +19,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/BkqUfLnum"></iframe>
 
 ```javascript
@@ -46,6 +47,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/B1hdy8num"></iframe>
 
 ```javascript
@@ -83,6 +85,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/rkGMf0pu7"></iframe>
 
 ```javascript
@@ -125,6 +128,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/SJYUZayKX"></iframe>
 
 ```javascript
@@ -148,6 +152,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/SJteE6JFQ"></iframe>
 
 ```javascript
@@ -176,6 +181,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/rJGvEHxdQ"></iframe>
 
 ```javascript

@@ -22,6 +22,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/rJVqwSqFQ"></iframe>
 
 
@@ -101,6 +102,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/B17BydaY7"></iframe>
 
 ```javascript
@@ -211,6 +213,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/Hy437sycQ"></iframe>
 
 ```javascript
@@ -321,6 +324,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/HksUUHe9m"></iframe>
 
 ```javascript

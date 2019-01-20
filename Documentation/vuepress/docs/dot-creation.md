@@ -17,6 +17,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/HJXaAYdOX"></iframe>
 
 ```javascript
@@ -74,6 +75,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/B1rYAKS_m"></iframe>
 
 In the example we call every second a function which set time out dot.on() every half second
@@ -144,6 +146,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/Hy9NS13cX"></iframe>
 
 In the example we call every second a function which set time out dot.on() every half second

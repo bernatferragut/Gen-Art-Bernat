@@ -16,6 +16,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/B1Ck3jPKm"></iframe>
 
 
@@ -92,6 +93,7 @@ border: 4px solid #000000;
 border-radius: 6px;
 overflow: hidden;
 position: relative;"
+scrolling="no"
 src="https://editor.p5js.org/embed/rkMk2btKm"></iframe>
 
 
