@@ -1,22 +1,24 @@
 # DOT ABSTRACTION
 
-The creation and understanding of this abstraction is the foundation of html canvas art. 
+The creation and understanding of this abstraction is the foundation of the html canvas art.
 
-We define what it 'feels' to be a dot through a **class**. The creation of this abstract template is the foundation for creating pixel/dot art. Once this object is 'grasped' we can start experimenting and exploring the canvas.
+We define what it 'feels' to be a dot using a **class**.
+The creation of this abstract template is the foundation of creating pixel/dot art.
+Once this object is 'grasped' we can start experimenting and exploring the canvas.
 
-The **Dot class** is formed of 2 main elements: Attributes and Methods.
+The **Dot class** is formed by 2 main elements: Attributes and Methods.
 
-1. Arrtibutes are defined in the construction function
-> Define the minimal amount of attributes we need: 
-* 2d space position (x, y) coordinates.
+1. Attributes are the characteristics that define a dot
+> Define in the constructor function, the basic characteristics for a dot:
+* 2D space position (x, y) coordinates.
 * size.
 
-2. The Methods will be the different behaviours will will give to the **Dot class**
-> Define the minimal amount of methods we need to make the dot behave: 
-* on: to make them appear - switching the light on.
-* off: to make them disappear - switching the light off.
+2. Methods are the different behaviors we give to the **Dot class**
+> Define the minimal amount of methods we need to make the dot to behave and act:
+* on: to make it appear - switching the light on.
+* off: to make it disappear - switching the light off.
 
-> Please have as a reference always the P5JS Reference page: (P5JS)[link]
+> It's very helpful to keep the P5JS Reference page on hand [LINK](https://p5js.org/reference/)
 
 ### Concepction of the Dot Class
 
@@ -43,12 +45,13 @@ class Dot {
 }
 ```
 
-### Dot Class with parameteres
+### A more versatile Dot Class
 
-In this class variation we include the possibility of passing external parameters to the constructor function:
+In this variation of the Dot class, we include the possibility of passing external parameters to the constructor function:
 * x,y coordinates
 * size
-* In case we don't pass any parameter we give the default one after the pipe symbol (|)
+* In case we don't pass any parameter we give the default ones after the pipe symbol (|)
+* In case we forget or we do not know the initial paratmetrs will always work
 
 ```javascript
 // Dot object

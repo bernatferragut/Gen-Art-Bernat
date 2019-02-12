@@ -1,7 +1,7 @@
 # DOT-ROW
 
 ## Row multiplication
-After understanding how works the dot conception, creation and animation now it's time to enter into the multiplication of the dot in the canvas. The multiplication it's a fundamental advantage of working with a computer which allow us to do things that by hand would be very difficult or would take a long time.
+Now that we understand how dot conception, creation and animation work, it's time to enter into adding more dots  on the canvas. Multiplication is a fundamental advantage of working with a computer: it allow us to do things that would be very difficult or take a long time to do by hand.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/B1Ck3jPKm)
 
@@ -74,11 +74,11 @@ class Dot {
 
 ## Row List
 
-* In this example we create a row list under the setup function. 
-* Once this list is created we apply the map method to each of the dots.
-* Now we are able to call any dot method we want to affect the dot's behaviour.
+* In this example we create a row list under the setup function.
+* Once this list is created we apply the map method (a type of loop) to each dot.
+* This allows us to call any dot method we want in order to influence a dot's behaviour.
 * One slider controls the Y position of the dots.
-* One slider controls the randomness in Y direction.
+* One slider controls the randomness in the Y direction.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/rkMk2btKm)
 

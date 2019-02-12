@@ -3,50 +3,41 @@
 ## Introduction
 
 ### Long time ago, in a far away galaxy...
-My life completely changed the day my dad brought me to see a film called TRON back in the 80's. When the film did end I thought to myself...one day I will create graphics like these.
+My life changed completely when I was 8, the day my dad brought me to see a film called TRON back in the 80's. When the film did end I thought to myself...one day I will create graphics like these.
 
-Later came the first days of the Internet in the early 90's with a plugin called macromedia flash which allowed for the first time anybody to start experimenting with graphics and code. 
+When **Macromedia Flash** came out in the early 90's, it opened up a huge door to the world of computer-generated graphics - anyone could start experimenting and showcase their work on the internet!
 
-After that, came Processing and recently with the standarisation of javascript as the programming language of the web new specialised libraries have appeared to make life easier for artists who want to express themselves in the frontiers between design and code.
+In the early 00's, came Processing a specialized library, which make it easier for artists who want to express themselves at the convergence of art and programming.
 
 ### P5JS
 
-P5JS was created by [Lauren McCarthy](http://lauren-mccarthy.com/) and is developed by a community of collaborators with the support of the Processing Foundation and NYU ITP.
-It represents the javascript web version of the seminal java project for artists called [Processing](https://processing.org/). 
+Born in 2016, P5JS was created by [Lauren McCarthy](http://lauren-mccarthy.com/) and is developed by a community of collaborators with the support of the Processing Foundation and NYU ITP.
 
-Born in 2016 and backed by the great and inspirng teacher [DanielShiffman](https://shiffman.net/), it has been growing steadily until become the perfect tool to make code accessible to artists, designers, educators and beginners.
+It is a Javascript variation of the original [Processing](https://processing.org/) project that was invented for making visual media.
 
-### Goals
-The Goal with this introductory course is to inspire anybody who wants to start creating digital art with the computer screen as their canvas. To learn the basics of designing art with code.
+Backed by the wonderfully inspiring teacher [DanielShiffman](https://shiffman.net/), P5JS has been growing steadily and has evolved into an amazing tool to make coding accessible to artists, designers, educators and beginners.
 
-I ask people to know at least a little bit of javascript, enough so they can follow the course (variables and loops should be enough). It's mainly about reading code, see what it does and experiment with it.
+### Purpose
+The purpose of this introductory course is to inspire anyone who wants to start creating digital art: learning to use basic coding as the media and a computer screen as the canvas.
 
-If you need a more introductory course here I give a fantastic link of [AllisonParish](http://www.decontextualize.com/) who has been another great inspiration to create this course for me and I do believe it's a perfect complement for better understanding some of the concepts we will dive into.
+Knowing a little bit of Javascript will help with this course: an understanding of loops, variables and modulo will make it easier to follow. It's about reading to understand the code snippets and becoming familiar with them by experimenting.
+
+A fantastic introductory Javascript course is from [AllisonParish](https://creative-coding.decontextualize.com/first-steps/) who has been another great inspiration to create my course. I believe it's a perfect complement for a better understanding of some of the concepts we will dive into.
 
 ### Concepts
-* Programming: variables, for loops, classes, p5js functions.
+* Programming: variables, loops, classes, p5js functions.
 * Mathematics: translations, modulo, sin and cos functions, random.
 
 ### Structure
 This introduction for creating Generative Art with p5JS course is divided into:
 
-1. Dot class abstraction
-2. dot object creation
-3. dot animation basics
-4. dot sliders
-5. dot - row
-6. dot - matrix
-7. dot - experiments
-
-### P5JS Installation
-Insert this piece of code in the head tag of your html file and you will be good to go.
-
-```html
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-```
+1. Dot: class abstraction
+2. Dot: object creation
+3. Dot: animation basics
+4. Sliders
+5. Rows
+6. Matrix
+7. Experiments
 
 ### Respect and inspiration
 

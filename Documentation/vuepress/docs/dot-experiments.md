@@ -1,20 +1,20 @@
 # EXPERIMENTS
 
-This examples have been taken from experiments I have been doing in the last year over online platforms like codepen and glitch. Take the time to read and understand the code, enjoy the beauty of generative art.
+These examples have been taken from experiments I have been working on in the last year on online platforms like Codepen and Glitch; take the time to read and understand the code. Enjoy the beauty of generative art!
 
 [CODEPEN EXAMPLES](https://codepen.io/collection/DJKJgP/)
 
 [GLITCH EXAMPLES](https://glitch.com/@bernatferragut)
 
 In the following experiments I have followed some design principles for simplicity:
-* Only the dot object
-* Only black and white colors
-* Only transparence as accent
+* Only object: the dot
+* Only colors: black and white
+* Only accent: transparency
 
 ## Experiment-1
-* Simple example of dots in circular motion.
+* Simple example of dots in a circular motion.
 * We can control the radius and speed of the dots with 2 sliders.
-* Open the possibility to experiment with multiple orbital trajectories.
+* Open to the possibility of experimenting with multiple orbital trajectories.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/BJAR_Z_5X)
 
@@ -189,7 +189,7 @@ class Dot {
 }
 ```
 ## Experiment-2b
-* Same example with several particles moving and rebounding on the edges of the canvas.
+* Adding several particles moving and rebounding on the edges of the canvas.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/ByeBwqW5Q)
 
@@ -289,9 +289,8 @@ class Dot {
 ```
 
 ## Experiment-3
-
 * Simple vertical particle system with one parameter to add randomness.
-* A sabre of light to have fun with!
+* A light saber to have fun with!
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/r1RDi5PqX)
 
@@ -384,7 +383,10 @@ class Dot {
 ```
 
 ## Your experiments
-* From now on you are on your own. May the force be with you...
+* It's now up to you to keep on exploring. May the force be with you!
+* This tutorial was made with love in October 2018. It is the kind of tutorial I wish I had to learn programming back when I started coding,
+I hope you enjoy learning from it as much as I did creating it.
+* Montreal 01/12/2018
 * [P5JS online editor](https://editor.p5js.org/)
 
 **MIT Licensed | © 2018-2019 Bernat Ferragut All Right Reserved | [bernatferragut.com](http://bernatferragut.com/)**

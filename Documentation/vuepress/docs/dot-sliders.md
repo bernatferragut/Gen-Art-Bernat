@@ -1,9 +1,9 @@
 # SLIDERS
 
-The sliders, allow us to better visualize changes over our canvas creations. Sliders give us the opportunity to interact and experiment which values can fit more our design criteria.
+The sliders allow us to better visualize changes within our canvas creations. They give us the opportunity to interact and experiment, finding then values that best meet our design criteria.
 
-To be able to use the sliders we need to import the DOM P5JS library. 
-Use these two libraries at the top of your HTML file:
+In order to use sliders, we need to import the DOM P5JS library.
+Use the following two libraries at the top of your HTML file:
 
 ```html
   <head>
@@ -12,9 +12,9 @@ Use these two libraries at the top of your HTML file:
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 ```
-In the following peace of code we introduce the basics of sliders creation.
+In the following piece of code, we introduce the basics of sliders creation.
 * Under the setup function create a slider object and define its parameters, position and style if any.
-* Under the draw function we pick up the slider value and insert it to the canvas parameter we want to interact with.
+* Under the draw function read the slider value and use it in the canvas parameter we want to interact with.
 
 ## Slider structure
 ```javascript
@@ -32,7 +32,7 @@ draw()
 2. Include these variables inside the dot class with their default values.
 3. Inside the setup() function define the sliders (createSlider, position and style).
 4. Inside the update() function pass the values of the sliders to your global variables.
-5. Now the slider value will drive yout global variable which affects the dot instance values.
+5. Now the slider value will drive your global variable which affects the dot instance values.
 
 * Example 1
 
@@ -110,19 +110,13 @@ class Dot {
 }
 ```
 ## Play and learn
-Sliders will help us to play with values. 
+Sliders will help us play with values.
 
-Through this play, we can see visually how numbers affect the movement, position, size and color of the different dots we have created. 
+Through this play, we can visualize how numbers affect the movement, position, size and color of the different dots we have created.
 
 It's an interactive way of learning to design through play and feel.
 
 * Example 1
-
-```diff
-  dot = new Dot(w/2+(sin(frameCount/(i+slow))*(i+amplitude)),h/5+(i*35),s);
-```
-In this line of code we create a new dot and pass as x value a sin() function driven by the frameCount and which speed is controlled by the variable slow affected by the incremented i value. Also affects the amplitude.
-The y value is displaced by 35 units and the size remains constant.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/BJ2uv8SFX)
 
@@ -140,9 +134,18 @@ position: relative;"
 scrolling="no"
 src="https://editor.p5js.org/embed/BJ2uv8SFX"></iframe>
 
+In this line of code, we create a new dot and pass as the 'x' value, a combination of a sin() function driven by the frameCount, the variable 'slow' and the counter variable 'i'.
+The value is displaced by 35 units and the size remains constant.
+
+```diff
+  dot = new Dot(w/2+(sin(frameCount/(i+slow))*(i+amplitude)),h/5+(i*35),s);
+```
+
+> Please refer to the sin() cos() section to better undertand this line of code[LINK](./dot-animation.md)
+
 
 ```javascript
-// Slider S for 'slowness'
+// Slider S for 'speed'
 // Slider A for 'amplitude'
 // Slider sz for 'size'
 

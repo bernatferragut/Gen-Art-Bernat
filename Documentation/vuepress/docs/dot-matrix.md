@@ -1,13 +1,14 @@
 # DOT-MATRIX
 
 ## Matrix creation
-Now we understand how to create a row and how we can control each of the dot objects individually. We do it by creating a list of their spacial positions and then calling individually each of the functions to perform actions on them.
+Now that we understand how control each of the dot individually and how to create a row of dots and influence those,
+Creating a 2D matrix of dots is a natural evolution.
 
-Creating a 2d Matrix of dots is the natural evloution. 
+We do this by creating a list of the dots spatial positions and then calling functions individually to perform actions on them.
 
-We will nest inside the first row loop another loop reperesanting our columns. That way we will have the control to create as many dots as we wish in our canvas and the power to control them individually.
+Inside the loop for the rows, we insert another loop representing the columns. This allows us to create as many dots on our canvas as we want, and have the power to control them all individually.
 
-Once the Matrix is defined, we will be able to recall the different methods we created in the past and any new one that can help us go in any new direction we wish to take.
+Once the matrix is defined, we can use different methods we have already created and new ones that can help us expand our work in a direction we find interesting.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/rJVqwSqFQ)
 
@@ -86,8 +87,8 @@ class Dot {
 
 ## Matrix experiment-1
 * We apply the random method to the matrix.
-* We play with size, x, y and transparency to create a special effect
-* We add sliders and button to reset to default position
+* We play with size, x, y, and transparency to create a special effect
+* We add sliders and button to reset to the default position
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/B17BydaY7)
 
@@ -195,9 +196,9 @@ class Dot {
 }
 ```
 
-## matrix experiment-2 
+## matrix experiment-2
 > matrix training
-* Variation with slight size variation based on the sin() function.
+* Variation using the sin() function to influence the size.
 * Random color in the grey scale for blinking light effects.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/Hy437sycQ)
@@ -307,9 +308,8 @@ class Dot {
 
 ## matrix experiment-3
 > desktop modulo cycle
-
 * We apply the random method to the matrix.
-* We play with the translate and modulo cycle in both axis.
+* We play with the translate and modulo cycle in both axes.
 
 [GO TO EDITOR](https://editor.p5js.org/bernatferragut/sketches/HksUUHe9m)
 
